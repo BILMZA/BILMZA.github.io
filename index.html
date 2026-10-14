@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muhammad Bilal Hamza (BILMZA) | QA, Networking &amp; Full-Stack</title>
+<meta name="description" content="IT student in Lahore. QA testing, networking and full-stack projects, including internship work at Arch Technologies and the Viewora final year project."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%B7%3C/text%3E%3C/svg%3E"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed": "#002113",
+            "on-error-container": "#ffdad6",
+            "surface-container-highest": "#2d3449",
+            "primary-container": "#1E86DB",
+            "surface-container-lowest": "#060e20",
+            "primary-fixed-dim": "#1E86DB",
+            "on-primary": "#0B1326",
+            "surface-bright": "#31394d",
+            "tertiary-container": "#30c88f",
+            "inverse-on-surface": "#283044",
+            "on-primary-fixed": "#001e2c",
+            "surface-dim": "#0b1326",
+            "on-surface-variant": "#bdc8d1",
+            "on-secondary-container": "#002c47",
+            "surface": "#0b1326",
+            "tertiary": "#56e5a9",
+            "on-tertiary": "#003824",
+            "tertiary-fixed": "#6ffbbe",
+            "on-primary-fixed-variant": "#004c69",
+            "secondary": "#93ccff",
+            "surface-container-high": "#222a3d",
+            "on-tertiary-fixed-variant": "#005236",
+            "surface-tint": "#1E86DB",
+            "primary-fixed": "#c4e7ff",
+            "surface-container": "#171f33",
+            "on-tertiary-container": "#004e34",
+            "inverse-primary": "#00668a",
+            "secondary-container": "#3198dc",
+            "secondary-fixed-dim": "#93ccff",
+            "tertiary-fixed-dim": "#4edea3",
+            "primary": "#2A93E6",
+            "inverse-surface": "#dae2fd",
+            "on-secondary": "#003351",
+            "outline-variant": "#3e484f",
+            "surface-container-low": "#131b2e",
+            "on-primary-container": "#004965",
+            "on-surface": "#dae2fd",
+            "background": "#0b1326",
+            "secondary-fixed": "#cce5ff",
+            "surface-variant": "#2d3449",
+            "on-error": "#690005",
+            "error-container": "#93000a",
+            "on-background": "#dae2fd",
+            "error": "#ffb4ab",
+            "on-secondary-fixed-variant": "#004b73",
+            "on-secondary-fixed": "#001d31",
+            "outline": "#87929a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "code-block": ["JetBrains Mono"],
+            "label-telemetry": ["JetBrains Mono"],
+            "display-hero-mobile": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "label-tag": ["JetBrains Mono"],
+            "body-md": ["Inter"],
+            "display-hero": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Inter"],
+            "headline-md": ["Inter"],
+            "code-inline": ["JetBrains Mono"],
+            "body-sm": ["Inter"]
+          },
+          "fontSize": {
+            "code-block": ["0.8125rem", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-telemetry": ["0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "display-hero-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-tag": ["0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-hero": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-sm": ["1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "code-inline": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+  html{scroll-behavior:smooth}
+  section[id],.timeline-item[id]{scroll-margin-top:6rem}
+  :focus-visible{outline:2px solid #2A93E6;outline-offset:3px;border-radius:4px}
+  .skip-link{position:absolute;left:-9999px;top:0;background:#2A93E6;color:#0B1326;padding:.5rem 1rem;z-index:100;font-weight:600}
+  .skip-link:focus{left:1rem;top:1rem}
+  .site-header-inner{min-width:0}
+  .site-brand{min-width:0}
+  .site-brand-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .site-desktop-nav{justify-content:flex-start;gap:.75rem}
+  .site-desktop-nav a{white-space:nowrap;font-size:.6875rem}
+  .site-actions{flex-shrink:0}
+  .download-label{white-space:nowrap}
+  .timeline-item > .flex-1{min-width:0}
+  .timeline-item a{overflow-wrap:anywhere}
+  @media (max-width:639px){
+    .site-header-inner{padding-left:1rem;padding-right:1rem}
+    .site-brand{min-width:0}
+    .site-brand-label{font-size:.75rem}
+    .download-label{display:none}
+    .site-actions{gap:.5rem}
+  }
+  @media (min-width:640px) and (max-width:1279px){
+    .site-github-action{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.animate-ping,.animate-pulse{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<a class="skip-link" href="#timeline">Skip to projects</a>
+<!-- Top Navigation Anchor (Shared TopNavBar Component) -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-sm border-b border-outline-variant/30 dark:border-outline-variant/30">
+<div class="site-header-inner flex justify-between items-center gap-4 w-full px-6 max-w-7xl mx-auto h-16">
+<!-- Brand Logo / Product Identifier -->
+<a class="site-brand flex items-center gap-3 group" href="#">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_8px_rgba(86,229,169,0.7)] animate-pulse"></span>
+<span class="site-brand-label text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface tracking-tight font-code-inline group-hover:text-primary transition-colors">
+          BILMZA // QA &amp; NET
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="site-desktop-nav hidden xl:flex flex-1 justify-center items-center gap-4 xl:gap-6 min-w-0">
+<a class="text-primary dark:text-primary font-semibold border-b-2 border-primary pb-1 font-label-telemetry text-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#timeline">Featured Timeline</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-telemetry font-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#qa-suite">QA &amp; Testing</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-telemetry font-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#networking">Networking &amp; Systems</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-telemetry font-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#internships">Internship Works</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-telemetry font-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#skills">Skills</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-telemetry font-label-telemetry hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#contact">Contact/CV</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="site-actions flex items-center gap-3">
+<a class="site-github-action hidden items-center gap-1.5 px-3 py-1.5 rounded-lg border border-outline-variant bg-surface-container-low text-on-surface hover:text-primary hover:border-primary font-label-telemetry text-label-telemetry transition-all duration-200 active:scale-95" href="https://github.com/BILMZA" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span>github.com/BILMZA</span>
+</a>
+<a class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-body-sm font-semibold whitespace-nowrap hover:bg-primary-fixed-dim transition-all duration-200 active:scale-95 shadow-[0_0_12px_-2px_rgba(42,147,230,0.4)]" href="cv.pdf" download>
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="download-label">Download CV</span>
+</a>
+</div>
+</div>
+</header>
+<nav aria-label="Sections" class="xl:hidden sticky top-16 z-40 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 overflow-x-auto">
+<div class="flex gap-5 px-6 py-2.5 font-label-telemetry text-label-telemetry text-on-surface-variant whitespace-nowrap">
+<a class="hover:text-primary" href="#timeline">Projects</a>
+<a class="hover:text-primary" href="#qa-suite">QA</a>
+<a class="hover:text-primary" href="#networking">Networking</a>
+<a class="hover:text-primary" href="#internships">Internship</a>
+<a class="hover:text-primary" href="#skills">Skills</a>
+<a class="hover:text-primary" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Main Application Canvas -->
+<main class="w-full max-w-7xl mx-auto px-6 space-y-20 py-10">
+<!-- Section 1: Hero Telemetry Deck -->
+<section class="relative pt-6 pb-12 border-b border-outline-variant/30">
+<div class="flex flex-col gap-6 max-w-4xl">
+<!-- Status Pill -->
+<div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-tertiary/30 bg-tertiary-container/10 text-tertiary w-fit">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-telemetry text-label-telemetry">Available for SQA / Systems / Dev Roles · Graduating Feb 2027 · CGPA 3.2</span>
+</div>
+<!-- Headline & Subtitle -->
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero tracking-tight text-on-surface">
+          Bridging <span class="text-primary underline decoration-primary/40 underline-offset-8">Software Quality Assurance</span>, Network Infrastructure &amp; Full-Stack Systems.
+        </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          IT student at Bahria University Lahore with hands-on work in manual QA and Postman API testing, Cisco Packet Tracer enterprise networks, Wireshark traffic analysis, and full-stack MERN applications.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-3">
+<a class="px-5 py-3 rounded-lg bg-primary text-on-primary font-headline-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_20px_-4px_rgba(42,147,230,0.4)] flex items-center gap-2 active:scale-95" href="#timeline">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span>Explore Interactive Timeline</span>
+</a>
+<a class="px-5 py-3 rounded-lg border border-outline-variant bg-surface-container text-on-surface hover:text-primary hover:border-primary font-headline-sm font-semibold transition-all flex items-center gap-2 active:scale-95" href="https://github.com/BILMZA" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>View GitHub Profile</span>
+</a>
+<a class="px-5 py-3 rounded-lg border border-transparent hover:border-outline-variant text-on-surface-variant hover:text-on-surface font-headline-sm font-medium transition-all flex items-center gap-2" href="cv.pdf" download>
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Resume</span>
+</a>
+</div>
+<!-- Quick Telemetry Readout Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-code-block text-code-block text-primary">01 // REPOS</span>
+<span class="text-headline-md font-headline-md text-on-surface">10 Projects</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">QA, Networking &amp; Full-Stack</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-code-block text-code-block text-tertiary">02 // QA AUDITS</span>
+<span class="text-headline-md font-headline-md text-on-surface">5 Bug Reports</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Jira-format, OLX test suite</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-code-block text-code-block text-secondary">03 // NETWORKS</span>
+<span class="text-headline-md font-headline-md text-on-surface">Multi-Site</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Packet Tracer &amp; Wireshark</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-code-block text-code-block text-primary-fixed-dim">04 // AUTOMATION</span>
+<span class="text-headline-md font-headline-md text-on-surface">CI/CD Flows</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">GitHub Actions Pipeline</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Interactive Filter & Category Matrix -->
+<section class="space-y-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-code-block text-code-block text-primary">TELEMETRY FILTER // MATRIX</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Engineered Milestones &amp; Workstreams</h2>
+<p id="filter-count" aria-live="polite" class="font-label-telemetry text-label-telemetry text-on-surface-variant pt-1"></p>
+</div>
+<!-- Filter Buttons -->
+<div class="flex flex-wrap items-center gap-2" id="filter-bar">
+<button class="filter-btn px-3 py-1.5 rounded bg-primary text-on-primary font-label-telemetry text-label-telemetry border border-primary transition-all" onclick="filterTimeline('all',this)" aria-pressed="true">All Streams</button>
+<button class="filter-btn px-3 py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-telemetry text-label-telemetry border border-outline-variant/30 transition-all" onclick="filterTimeline('qa',this)" aria-pressed="false">Quality Assurance</button>
+<button class="filter-btn px-3 py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-telemetry text-label-telemetry border border-outline-variant/30 transition-all" onclick="filterTimeline('networking',this)" aria-pressed="false">Networking &amp; Telemetry</button>
+<button class="filter-btn px-3 py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-telemetry text-label-telemetry border border-outline-variant/30 transition-all" onclick="filterTimeline('fullstack',this)" aria-pressed="false">Full-Stack / Dev</button>
+<button class="filter-btn px-3 py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-telemetry text-label-telemetry border border-outline-variant/30 transition-all" onclick="filterTimeline('internship',this)" aria-pressed="false">Internship</button>
+<button class="filter-btn px-3 py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-telemetry text-label-telemetry border border-outline-variant/30 transition-all" onclick="filterTimeline('fyp',this)" aria-pressed="false">Final Year Project</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Core Section - Layout 5B Vertical Project Timeline -->
+<section class="relative" id="timeline">
+<!-- Continuous Vertical Trace Line -->
+<div class="absolute left-4 md:left-8 top-4 bottom-4 w-px bg-outline-variant/40 -z-0"></div>
+<div class="space-y-12">
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="fullstack fyp">
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_12px_rgba(42,147,230,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">Final Year Project</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">BAHRIA UNIVERSITY LAHORE</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-primary">51-Participant User Study</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Viewora: 360&deg; Venue Exploration
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Platform for exploring Lahore hotels, rooms and restaurants in 360&deg; before visiting. Map search, reviews, bookmarks and share links, plus an admin upload pipeline that checks image blur and 360&deg; aspect ratio. In the user study, 360&deg; tours beat static images on all three measured metrics.
+              </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">React</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Node.js</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Express</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">MySQL (TiDB)</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Firebase Auth</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Cloudinary</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Pannellum</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Leaflet</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">OpenCV</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-5">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://viewora-fyp.vercel.app" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>viewora-fyp.vercel.app</span>
+</a>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Two-person team</span>
+</div>
+</div>
+</div>
+<!-- Milestone 1: Nexus Full-Stack -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="fullstack internship">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_12px_rgba(42,147,230,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">Full-Stack / Real-Time System</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">ARCH TECH FINAL TASK</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Internship Task 4</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Nexus: Social Network (Arch Technologies Final Task)
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Social network with profiles, posts, image and video uploads, likes, comments, friend requests and notifications. Real-time updates over Socket.IO, JWT authentication, and post privacy enforced on the server.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">MongoDB</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Express</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">React</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Node.js</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Socket.IO</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">JWT</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Redux Toolkit</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Search &amp; Filters</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/Arch_Technologies_Final_Task" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/Arch_Technologies_Final_Task</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Status: Completed, not deployed</span>
+</div>
+</div>
+</div>
+<!-- Milestone 2: Manual QA Suite -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="qa" id="qa-suite">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-tertiary flex items-center justify-center shadow-[0_0_12px_rgba(86,229,169,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-tertiary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-tertiary/10 border border-tertiary/30 text-tertiary font-label-tag text-label-tag">Software Quality Assurance</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">MANUAL TEST SUITE</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-tertiary-container/20 border border-tertiary text-tertiary font-label-telemetry text-label-telemetry">
+<span class="material-symbols-outlined text-[14px]">bug_report</span>
+<span>5 Jira Bug Reports</span>
+</div>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-tertiary transition-colors">
+                Manual QA Suite (OLX Marketplace)
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Manual test suite for OLX with positive, negative and edge-case scenarios, Boundary Value Analysis (BVA), and five bug reports written in Jira format.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Jira</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Excel</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Manual Testing</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">BVA</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Test Cases</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Bug Reporting</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/Manual_QA_Suite" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/Manual_QA_Suite</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-tertiary font-medium">Positive / Negative / Edge cases</span>
+</div>
+</div>
+</div>
+<!-- Milestone 3: TCS Courier Enterprise Network -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="networking" id="networking">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shadow-[0_0_12px_rgba(147,204,255,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-secondary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-secondary/10 border border-secondary/30 text-secondary font-label-tag text-label-tag">Networking &amp; Telemetry</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">CORE ENTERPRISE INFRASTRUCTURE</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-secondary">Packet Tracer Topology</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-secondary transition-colors">
+                TCS Courier Multi-Site Enterprise Network
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Multi-site enterprise network built in Cisco Packet Tracer with a head office and two branches: WAN links, VLANs, NAT, access control lists (ACLs), DNS and DHCP servers, VoIP, a Cisco firewall and web servers.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Cisco Packet Tracer</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">VLAN</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">WAN Links</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">NAT/ACL</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">VoIP</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">DHCP/DNS</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/TCS-Courier-System" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/TCS-Courier-System</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Head office + 2 branches</span>
+</div>
+</div>
+</div>
+<!-- Milestone 4: CI/CD & Wireshark Bridge -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="networking">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary-fixed-dim flex items-center justify-center shadow-[0_0_12px_rgba(30,134,219,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary-fixed-dim/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">DevOps &amp; Protocol Analysis</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">NETWORKING + DEV BRIDGE</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-primary">GitHub Actions Pipeline</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary-fixed-dim transition-colors">
+                Full-Stack CI/CD &amp; Wireshark Traffic Telemetry
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                React dashboard and Express API built and deployed through a GitHub Actions pipeline. Traffic from the app is captured in Wireshark to study TCP handshakes, HTTP, DNS and WebSocket behaviour.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Wireshark</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">GitHub Actions</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">React</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Node.js</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">TCP/IP</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Packet Analysis</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/fullstack-cicd-network-analysis" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/fullstack-cicd-network-analysis</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">TCP / HTTP / DNS / WebSocket</span>
+</div>
+</div>
+</div>
+<!-- Milestone 5: Sonora Audio Player -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="fullstack internship" id="internships">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_12px_rgba(42,147,230,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">Frontend Engineering</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">INTERNSHIP TASK 03</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-tertiary">HTML5 Audio API</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Sonora Audio Player
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Browser music player built with React 19 and Vite on the native HTML5 Audio API, with search, genre filter, seek bar, volume control and downloads.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">React</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Vite</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Tailwind CSS</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">HTML5 Audio API</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/arch_tech_internship_task_3" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/arch_tech_internship_task_3</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">React 19 + Vite</span>
+</div>
+</div>
+</div>
+<!-- Milestone 6: Young Dev SQA Automation -->
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="qa">
+<!-- Timeline Node Anchor -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-tertiary flex items-center justify-center shadow-[0_0_12px_rgba(86,229,169,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<!-- Content Card -->
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-tertiary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-tertiary/10 border border-tertiary/30 text-tertiary font-label-tag text-label-tag">API &amp; Integration QA</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">YOUNG DEV SQA TASKS</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-tertiary">Postman API Testing</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-tertiary transition-colors">
+                Young Dev SQA Tasks &amp; API Testing
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                QA tasks completed at three levels: Gmail test cases (easy), intermediate test tasks, and API testing with Postman (advanced).
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Postman</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">REST API Testing</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Test Cases</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Gmail Testing</span>
+</div>
+<!-- Footer Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/Young_Dev_SQA_Tasks" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/Young_Dev_SQA_Tasks</span>
+</a>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Three difficulty levels</span>
+</div>
+</div>
+</div>
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="fullstack internship">
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_12px_rgba(42,147,230,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">Frontend Engineering</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">INTERNSHIP TASK 02</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-primary">localStorage Persistence</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">
+                To-Do List App
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Add, edit, delete and clear tasks. Data is saved in the browser so the list survives a refresh.
+              </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">HTML</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">CSS</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Vanilla JS</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">localStorage</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-5">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/arch_tech_internship_task_2" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/arch_tech_internship_task_2</span>
+</a>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">No framework</span>
+</div>
+</div>
+</div>
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="internship">
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_12px_rgba(42,147,230,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-primary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-primary/10 border border-primary/30 text-primary font-label-tag text-label-tag">Frontend Engineering</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">INTERNSHIP TASK 01</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-primary">Deployed on Vercel</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Responsive Portfolio Site
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                The first internship task: a responsive personal portfolio built with plain HTML and CSS.
+              </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">HTML</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">CSS</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Responsive Design</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-5">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/arch_tech_internship_task_1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/arch_tech_internship_task_1</span>
+</a>
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://archtechinternshiptask1.vercel.app" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Live site</span>
+</a>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Arch Technologies</span>
+</div>
+</div>
+</div>
+<div class="timeline-item relative flex gap-6 md:gap-10 items-start" data-category="qa">
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center pt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest border-2 border-tertiary flex items-center justify-center shadow-[0_0_12px_rgba(86,229,169,0.5)]">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low border border-outline-variant/40 p-6 md:p-8 hover:border-tertiary/50 transition-all duration-200 group">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/20 pb-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-tertiary/10 border border-tertiary/30 text-tertiary font-label-tag text-label-tag">Data Annotation</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">ANNOTATION DATASET</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-tertiary">Manual Labelling</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface group-hover:text-tertiary transition-colors">
+                Sentiment &amp; Intent Annotation Dataset
+              </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                YouTube comments labelled by hand for sentiment (positive, negative, neutral) and user intent (praise, complaint, question, statement).
+              </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Annotation</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Sentiment</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Intent</span>
+<span class="px-2 py-1 rounded bg-surface-container border border-outline-variant/30 text-on-surface font-code-inline text-code-inline">Text Datasets</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 mt-6 border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-5">
+<a class="flex items-center gap-2 text-primary hover:text-primary-fixed-dim font-code-inline text-code-inline transition-colors" href="https://github.com/BILMZA/SENTIMENT-INTENT-ANNOTATION-DATASET" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/BILMZA/SENTIMENT-INTENT-ANNOTATION-DATASET</span>
+</a>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Hand-labelled data</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Technical Competency Grid -->
+<section class="space-y-8 pt-10 border-t border-outline-variant/30" id="skills">
+<div>
+<span class="font-code-block text-code-block text-tertiary">STACK AUDIT // CAPABILITIES</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Technical Competency Grid</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Tools & QA Instrumentation -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">rule_settings</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Tools &amp; QA Telemetry</h3>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Postman</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">API Tests &amp; Collections</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Jira</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Bug Severity &amp; Trace</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Wireshark</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Packet Telemetry</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Packet Tracer</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Cisco Topologies</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Git / GitHub</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Version Control</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">GitHub Actions</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">CI/CD Automation</span>
+</div>
+</div>
+</div>
+<!-- Languages & Querying -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-4">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined">data_object</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Languages &amp; Core Logic</h3>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">JavaScript</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">ES6+ / Node Runtime</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Python</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Scripting &amp; Automation</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">C++</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Data Structures &amp; OOP</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">SQL</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Relational Queries</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Bash / Shell</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Unix Environments</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">HTML5 / CSS3</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Semantic Layouts</span>
+</div>
+</div>
+</div>
+<!-- Frameworks & Ecosystem -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-4">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined">developer_mode</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Frameworks &amp; Protocols</h3>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">React</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Hooks &amp; SPAs</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Node.js</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Backend &amp; REST APIs</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Express</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">REST APIs &amp; Middlewares</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">Tailwind CSS</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Utility Design Systems</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">TCP/IP &amp; UDP</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Network Foundations</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container border border-outline-variant/20 flex flex-col">
+<span class="text-on-surface font-headline-sm text-[0.875rem]">VLAN &amp; NAT</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Segmentation &amp; Translation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Recruiter Quick-Action / Terminal Status Panel -->
+<section class="space-y-6 pt-10 border-t border-outline-variant/30" id="contact">
+<div>
+<span class="font-code-block text-code-block text-primary">COMMUNICATION UPLINK // ENGAGEMENT</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Initiate Contact &amp; Review Credentials</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Recruiter Terminal State -->
+<div class="lg:span-7 lg:col-span-7 p-6 md:p-8 rounded-xl bg-surface-container-lowest border border-outline-variant/50 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-code-block text-code-block text-on-surface-variant pl-2">bilmza@portfolio:~</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-tertiary">SESSION ACTIVE</span>
+</div>
+<div class="font-code-block text-code-block space-y-2 text-on-surface-variant">
+<p><span class="text-primary">$</span> diagnose --target candidates/bilmza</p>
+<p class="text-on-surface">&gt; Target Graduation: February 2027</p>
+<p class="text-on-surface">&gt; Academic Standing: CGPA 3.2</p>
+<p class="text-on-surface">&gt; Focus: Software QA, Networking, Full-Stack Development</p>
+<p class="text-tertiary">&gt; System Status: All tests green. Ready for QA / Systems interview.</p>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex flex-wrap gap-3">
+<a class="px-4 py-2.5 rounded-lg bg-primary text-on-primary font-headline-sm font-semibold hover:bg-primary-fixed-dim transition-all flex items-center gap-2 text-[0.875rem]" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bilmza0@gmail.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Direct Email Transmission</span>
+</a>
+<a class="px-4 py-2.5 rounded-lg border border-outline-variant bg-surface-container text-on-surface hover:text-primary hover:border-primary font-headline-sm font-semibold transition-all flex items-center gap-2 text-[0.875rem]" href="https://github.com/BILMZA" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>github.com/BILMZA</span>
+</a>
+</div>
+</div>
+<!-- Career / Quick Direct Profile Details -->
+<div class="lg:span-5 lg:col-span-5 p-6 md:p-8 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<h3 class="text-headline-md font-headline-md text-on-surface">Candidate Summary</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Looking for internships and entry-level roles in software QA, networking and full-stack development. Graduating February 2027 from Bahria University Lahore Campus.
+            </p>
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Role Compatibility:</span>
+<span class="text-on-surface font-semibold">SQA / Networking / Full-Stack</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Based in:</span>
+<span class="text-on-surface font-semibold">Lahore, Pakistan</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Proof of Work:</span>
+<span class="text-tertiary font-semibold">Public GitHub Repos</span>
+</div>
+</div>
+</div>
+<a download href="cv.pdf" class="w-full py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-on-primary font-headline-sm font-semibold transition-all duration-200 flex items-center justify-center gap-2 active:scale-98" >
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Download CV</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width bottom border-t border-outline-variant/30 dark:border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-1">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface font-code-inline">
+          BILMZA // QA &amp; NET
+        </span>
+<p class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm">
+          © 2026 Muhammad Bilal Hamza. Built with HTML and Tailwind CSS.
+        </p>
+</div>
+<!-- Navigation & Technical Telemetry Links -->
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#timeline">Projects</a>
+<div class="flex items-center gap-1.5 text-tertiary text-body-sm font-body-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Open to opportunities</span>
+</div>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-primary transition-colors duration-150" href="https://github.com/BILMZA" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+</div>
+</footer>
+<!-- Interactive Timeline Filter + Nav Highlight -->
+<script>
+  const ON  = ['bg-primary','text-on-primary','border-primary'];
+  const OFF = ['bg-surface-container-low','text-on-surface-variant','border-outline-variant/30'];
+
+  function filterTimeline(category, btn) {
+    const items = document.querySelectorAll('.timeline-item');
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove(...ON); b.classList.add(...OFF); b.setAttribute('aria-pressed','false');
+    });
+    btn.classList.remove(...OFF); btn.classList.add(...ON); btn.setAttribute('aria-pressed','true');
+    let shown = 0;
+    items.forEach(item => {
+      const cats = (item.getAttribute('data-category') || '').split(' ');
+      const match = category === 'all' || cats.includes(category);
+      item.style.display = match ? 'flex' : 'none';
+      if (match) shown++;
+    });
+    document.getElementById('filter-count').textContent = 'Showing ' + shown + ' of ' + items.length + ' projects';
+  }
+  document.getElementById('filter-count').textContent = 'Showing ' + document.querySelectorAll('.timeline-item').length + ' of ' + document.querySelectorAll('.timeline-item').length + ' projects';
+
+  // highlight the current section in the desktop nav
+  const navLinks = Array.from(document.querySelectorAll('header nav a[href^="#"]'));
+  const ACTIVE = ['text-primary','font-semibold','border-b-2','border-primary','pb-1'];
+  function spy() {
+    if (!navLinks.length) return;
+    let current = navLinks[0];
+    navLinks.forEach(a => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t && t.getBoundingClientRect().top < window.innerHeight * 0.35) current = a;
+    });
+    navLinks.forEach(a => {
+      a.classList.remove(...ACTIVE); a.classList.add('text-on-surface-variant');
+    });
+    current.classList.remove('text-on-surface-variant'); current.classList.add(...ACTIVE);
+  }
+  window.addEventListener('scroll', spy, {passive:true}); spy();
+</script>
+</body>
+</html>
